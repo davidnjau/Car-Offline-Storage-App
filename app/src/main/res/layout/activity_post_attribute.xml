@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostAttribute">
+
+    <ScrollView
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:background="@drawable/edit_text_round"
+                android:singleLine="true"
+                android:padding="20dp"
+                android:id="@+id/etName"
+                android:hint="Car Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_round"
+                android:paddingBottom="100dp"
+                android:id="@+id/etDescription"
+                android:hint="Car Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_action_image"
+                android:scaleType="centerCrop"
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:onClick="Gallery"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:text="Add image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:onClick="Save"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
